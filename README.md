@@ -15,3 +15,12 @@ While many of the webpages followed a similar format, this was not true for all 
 **Output**
 
 The output of this script was datasets that contained "Team Name", "Date", and "Year". The "Team Name" column pulled the opponent from the schedule webpage, "Date" contained the date of the competition as represented on the website, and "Year" collected the year which was not represented in the date and needed to be pulled from the select option that specified the season year on the websites. The final dataset created contained an excel tab for each sports team that provided the data on opponent, date of competition, and season year for each of the sports programs across a D1 college athletic program. This file was used in the next step of a larger analysis where I scraped additional schedule information from these same webpages to get the location of the competition and denoted whether it was a home or away game for a project that was looking to explore injury rates based on miles traveled by the athletes.
+
+## PDF converter.py
+
+**File Description**
+
+This Python file converts PDFs of in-game performance metrics collected by a basketball team to structured data that was usable in a larger project on team performance across a season. These PDFs were outputs from a program that the team uses to generate advanced statistics and evaluate performance of individual players and the team in the games across a season. In order to pull these metrics into a project that looked at relationships between sports science metrics and in-game performance as well as how preparation for each game may impact how well the team plays according to advanced metrics, there was a need to aggregate the data contained across the many PDFs into one usable dataset.
+
+**Code considerations**
+
