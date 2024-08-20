@@ -6,6 +6,7 @@ This repository holds scipts created in Python to perform webpage scraping and c
 This script scrapes webpages that contain schedule information for all the sports teams from a D1 college. These webpages contained information on opponents, dates of games or competitions, location of event, and whether the outcome was a win or loss. It was requested that all schedules from 2016 forward for every varsity sports team be scraped to allow for a dataset to be created that aggregates all pertinent schedule information for all teams within the athletics program. 
 
 **Project Description**
+
 Webpage scraping of schedule information from all teams across an athletic program was completed as a first step to a larger project that was hoping to explore whether travel schedules and distance traveled by athletes had a relationship with specific types of injuries. To pursue this larger goal, schedule information needed to be collected from the webpages that represented the various teams and their competitions from 2016-2023. The main steps to achieve this objective were studying the html format of the webpages to understand where the pertinent information was stored in the underlying code, connecting to the target URL, and parsing the HTML content. The final step was to extract the actual data from the elements and repeat this process for the differing structures and nuances present across the various sports teams' webpages.
 
 **Code considerations**
