@@ -78,10 +78,10 @@ print(f"Team data with dates has been exported to {excel_file}.")
 This scrapes the sports that fall across multiple calendar years, i.e. "2016-17", "2017-18" etc
 '''
 
-# Define the list of years you want to scrape
+# Define the list of years to scrape
 years_to_scrape = ["2016-17", "2017-18", "2018-19", "2019-20", "2020-21", "2021-22", "2022-23"]  # From 2016 to 2023
 
-# Define a list of team names you want to scrape
+# Define a list of team names to scrape
 teams_to_scrape = ["mens-basketball", "mens-golf", "womens-basketball", "womens-gymnastics", "mens-swimming-and-diving",
                    "womens-swimming-and-diving", "mens-tennis", "womens-tennis", "track-and-field"]  # Add or remove team names as needed
 
@@ -301,7 +301,7 @@ This scrapes ski schedule info, had differing format of years present in the sch
 lax_years_to_scrape = ["2016-17", "2017-18", "2018-19", "2019-20", "2020-21", "2022"]  # From 2016 to 2023
 
 # Define a list of team names you want to scrape
-teams_to_scrape = ["alpine-skiing"]  # Add or remove team names as needed
+teams_to_scrape = ["alpine-skiing"]
 
 # Create a dictionary to store team names, their data, and dates
 team_data = {}
@@ -356,7 +356,7 @@ for team in teams_to_scrape:
     # Store the DataFrame for this team in the dictionary
     team_data[team] = df
 
-# Combine all beach vb team data into one DataFrame
+# Combine all ski team data into one DataFrame
 ski_df = pd.concat(team_data.values(), ignore_index=True)
 
 # Create an Excel writer to save data for lacrosse
