@@ -1,4 +1,4 @@
-# Web Scapring and Converting information contained in PDFs to structured data in Python
+# Web Scaping and Converting information contained in PDFs to structured data in Python
 This repository holds scipts created in Python to perform webpage scraping and converting PDFs to structured data.
 
 ## College_Sports_Web_Scraping.py
