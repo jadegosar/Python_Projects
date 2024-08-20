@@ -1,11 +1,14 @@
 # Web Scapring and Converting information contained in PDFs to structured data in Python
 This repository holds scipts created in Python to perform webpage scraping and converting PDFs to structured data.
 
-## NBA.twbx
-
+## College_Sports_Web_Scraping.py
+This script scrapes webpages that contain schedule information for all the sports teams from a D1 college. These webpages contained information on opponents, dates of games or competitions, location of event, and whether the outcome was a win or loss. It was requested that all schedules from 2016 forward for every varsity sports team be scraped to allow for a dataset to be created that aggregates all pertinent schedule information for all teams within the athletics program. 
 
 **Project Description**
 
+
 **Code considerations**
+While many of the webpages followed a similar format, this was not true for all teams that were included. For example, there were a couple of sports that did not have varsity status in 2016 so considerations had to be made to correctly scrape the schedules of these teams such as setting different year parameters to search for in the loop that scraped all years of schedule information for a given team. Additionally, there are teams that have all games of their season in a single calendar year while others competition season will fall across multiple years (i.e. winter sports such as basketball or swimming and diving). To handle the differences in these two groups, two separate loops had to be created to support the differing format of the underlying webpages. Lastly, there was one team that had a slightly different structure to their schedule when compared to all the other sports in the athletics programs so additional code was created to handle the scraping of this team's schedules in a customized loop.
 
 **Output**
+The output of this script was datasets that contained "Team Name", "Date", and "Year". The "Team Name" column pulled the opponent from the schedule webpage, "Date" contained the date of the competition as represented on the website, and "Year" collected the year which was not represented in the date and needed to be pulled from the select option that specified the season year on the websites. The final dataset created contained an excel tab for each sports team that provided the data on opponent, date of competition, and season year for each of the sports programs across a D1 college athletic program. This file was used in the next step of a larger analysis where I scraped additional schedule information from these same webpages to get the location of the competition and denoted whether it was a home or away game for a project that was looking to explore injury rates based on miles traveled by the athletes.
